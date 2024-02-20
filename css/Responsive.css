@@ -188,7 +188,138 @@
 }
 /* mobile screen  */
 @media screen and (max-width: 480px) {
-  body {
-    background-color: red;
+  .controls {
+    flex-direction: row;
+    bottom: -40px;
+    left: 0;
+    background: #1eb573;
+    right: 0;
+    position: fixed;
+    top: unset;
+    justify-content: space-evenly;
+    padding: 0.5rem 0;
+  }
+  .theme-btn {
+    right: 2%;
+    width: 30px;
+    height: 30px;
+    top: 1%;
+    font-size: 1rem;
+  }
+  .theme-btn i {
+    font-size: 1rem;
+  }
+  .left-header .h-shape {
+    width: 40%;
+    clip-path: polygon(0 0, 8% 0, 112% 100%, -4% 100%);
+  }
+  .left-header .image {
+    width: 80%;
+    height: 90vh;
+  }
+
+  .left-header .image {
+    width: 80%;
+    margin: 2rem auto;
+  }
+  .right-header {
+    padding: 1rem 2rem 1.5rem 2rem;
+  }
+  .right-header .name {
+    font-size: 1.4rem;
+  }
+  .right-header p {
+    margin: 0.5rem 0 2rem 0;
+  }
+  .right-about {
+    grid-template-columns: auto;
+  }
+  .about-container .left-about {
+    padding-right: 0;
+  }
+
+  .right-about .about-item .abt-text {
+    padding: 1.5rem 0.5rem;
+    flex-direction: row;
+  }
+  .right-about .about-item {
+    border-radius: 10%;
+  }
+
+  .progress-bars {
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .progress-bar .prog-title {
+    font-weight: 400;
+  }
+  .progress-con .prog-text {
+    font-size: 1rem;
+  }
+
+  .progress-con .progress {
+    width: 80%;
+    height: 0.3rem;
+    margin-left: 0.5rem;
+    border-radius: 0.5rem;
+  }
+
+  .timeline {
+    margin-bottom: 5rem;
+  }
+
+  /* portfolio section  */
+  .portfolios {
+    grid-template-columns: repeat(1, 1fr);
+    width: 85%;
+    margin: 0 auto;
+  }
+  .portfolio-text {
+    width: 85%;
+    font-size: 1rem;
+  }
+  .blogs {
+    margin: 1rem auto 5rem auto;
+    width: 85%;
+  }
+  .blog-text h4 {
+    font-size: 1.1rem;
+  }
+
+  /* contact section start  */
+  .contact {
+    width: 85%;
+    margin: 2rem auto 5rem auto;
+  }
+
+  .contact-info .contact-item {
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  .contact-icons {
+    width: 80%;
+    margin: 1.5rem auto;
+    background: grey;
+    opacity: 0.6;
+    border-radius: 5rem;
+    padding: 0.2rem;
+  }
+  .contact-icons a {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+  }
+
+  .right-contact .input-control input,
+  .right-contact .input-control textarea {
+    padding: 0.8rem 1.1rem;
+    width: 100%;
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto;
   }
 }
