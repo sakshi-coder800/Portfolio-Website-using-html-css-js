@@ -159,6 +159,7 @@ a {
   align-items: center;
   transition: all 0.4s ease-in-out;
   box-shadow: var(--br-sm-2);
+  z-index: 1000;
 }
 
 .theme-btn i {
@@ -762,3 +763,16 @@ header {
 /* contact section end */
 
 /* contact section end */
+
+.container {
+  display: none;
+  transform: translateY(-100%) scale(0);
+  transition: all 0.4s ease-in-out;
+  background-color: #191d2b;
+}
+
+.active {
+  display: block;
+  animation: appear 1s ease-in-out;
+  transform: translateY(0) scaleY(1);
+}
